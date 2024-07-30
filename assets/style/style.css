@@ -40,12 +40,6 @@ body {
     }
 }
 
-/* @media (min-width: 1025px){
-    .container{
-        max-width: 82.5rem;
-    }
-} */
-
 button {
     border: none;
 }
@@ -57,15 +51,7 @@ button {
 
 .logo_size {
     width: 13.57rem;
-}
-
-/* Custom styles for navbar toggler */
-/* .navbar-toggler-icon::before {
-    content: '\f0c9'; /* FontAwesome icon for hamburger menu */
-/* font-family: 'FontAwesome';
-    font-size: 1.5em; 
-} */
-
+}ß
 /* Custom styles for navbar toggler */
 .navbar-toggler-icon {
     display: block;
@@ -714,7 +700,7 @@ footer .img-fluid {
     top: -4rem;
 }
 
-
+/*******media queries*********/
 @media only screen and (min-width:993px) and (max-width:1024px) {
     .card_img {
         height: 16.75rem;
@@ -861,7 +847,7 @@ footer .img-fluid {
     .slick-arrow {
         width: 4rem !important;
     }
-     .carousel-control-next, #Destinations .carousel-control-prev, #Destinations .slick-arrow {
+ #Destinations .slick-arrow {
         top: -1rem;
     }
     .slick-prev {
