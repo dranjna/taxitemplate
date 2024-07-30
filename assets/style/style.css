@@ -1,0 +1,967 @@
+/* Base styles */
+body {
+    font-family: PlusJakartaSans_Regular;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+@font-face {
+    font-family: PlusJakartaSans_Bold;
+    src: url(../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: PlusJakartaSans_Light;
+    src: url(../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Light.ttf);
+}
+
+@font-face {
+    font-family: PlusJakartaSans_Medium;
+    src: url(../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: PlusJakartaSans_Regular;
+    src: url(../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: PlusJakartaSans_SemiBold;
+    src: url(../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf);
+}
+
+@media (min-width: 1025px) {
+    .container {
+        max-width: 82.5rem;
+    }
+
+    html {
+        font-size: .865vw;
+    }
+}
+
+/* @media (min-width: 1025px){
+    .container{
+        max-width: 82.5rem;
+    }
+} */
+
+button {
+    border: none;
+}
+
+#section1 {
+    background-color: rgba(49, 146, 234, 0.1);
+    /* height: 100vh; */
+}
+
+.logo_size {
+    width: 13.57rem;
+}
+
+/* Custom styles for navbar toggler */
+/* .navbar-toggler-icon::before {
+    content: '\f0c9'; /* FontAwesome icon for hamburger menu */
+/* font-family: 'FontAwesome';
+    font-size: 1.5em; 
+} */
+
+/* Custom styles for navbar toggler */
+.navbar-toggler-icon {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333;
+    font-family: 'PlusJakartaSans_Medium';
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #3192ea;
+}
+
+.btn {
+    height: 3.25rem;
+    width: 9.25rem;
+    border-radius: 0.625rem;
+    border: 0;
+    color: #fff;
+    font-size: 1.125rem;
+    font-family: 'PlusJakartaSans_Medium';
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.contact_btn {
+    background-color: #3192ea;
+}
+
+.contact_btn:hover {
+    background-color: #fbde15;
+    color: #fff;
+    box-shadow: 0 14px 20px #3191ea21;
+}
+
+.user_img {
+    height: 3.25rem;
+    width: 3.25rem;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+/********hero section *************/
+#hero {
+    padding: 6.25rem 0 5rem;
+    background: url(../../assets/images/Ellipse_22.png) no-repeat 5% 100%;
+    background-size: 23.625rem;
+}
+
+#hero h1 {
+    color: #333;
+    font-family: PlusJakartaSans_Bold;
+    font-size: 4.375rem;
+    text-transform: uppercase;
+}
+
+.margin_left {
+    margin-left: 0%;
+}
+
+/* *********tabs********** */
+
+#pills-tab {
+    z-index: 1;
+    position: relative;
+}
+
+.form_wrapper {
+    max-width: 51.25rem;
+    margin: 3rem auto 0;
+}
+
+.nav-pills li {
+    border-right: 1px solid #E9E9E9;
+    padding: .25rem;
+    text-align: center;
+}
+
+.nav-pills li:last-child {
+    border-right: none;
+}
+
+.nav-pills .nav-link {
+    color: #000;
+    font-family: PlusJakartaSans_Light;
+    font-size: 0.875rem;
+    border-radius: 0 !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.nav-pills .nav-link:hover {
+    color: #3192ea;
+}
+
+.border-right-0 {
+    border-right: 0 !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: rgba(49, 146, 234, 1) !important;
+    border: 0;
+    background-color: transparent !important;
+    font-family: PlusJakartaSans_Medium;
+}
+
+.nav-pills {
+    width: 34.5rem;
+    background-color: #fff;
+}
+
+#pills-tabContent {
+    background-color: #fff;
+    box-shadow: 0 14px 28px #2d37412b;
+}
+
+#pills-tabContent form .col-30 {
+    flex: 0 0 26.5%;
+    max-width: 26.5%;
+}
+
+#pills-tabContent form .col-30:not(:first-child) {
+    margin-left: 4%;
+}
+
+#pills-tabContent form .col-30:nth-child(3) {
+    border: none !IMPORTANT;
+}
+
+#pills-tabContent input,
+#pills-tabContent input::placeholder {
+    font-size: 1.125rem;
+}
+
+#pills-tabContent input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#pills-tabContent form button svg:hover rect,
+.navbar-light .navbar-text svg:hover circle {
+    fill: #3192ea;
+}
+
+.source_city {
+    color: #000;
+    font-family: PlusJakartaSans_Light;
+    font-size: 0.875rem;
+    text-align: left;
+}
+
+input::placeholder {
+    color: rgba(151, 160, 164, 1);
+    font-family: PlusJakartaSans_Light;
+    font-size: 0.875rem;
+    text-align: left;
+}
+
+.form-control {
+    border: 0 !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .nav-pills {
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .nav-pills li {
+        width: auto;
+    }
+
+    #pills-tabContent {
+        margin-top: 10px;
+    }
+
+    .tab-pane {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .col-auto {
+        width: 100%;
+    }
+
+    .col-auto.text-start.border-end {
+        border-bottom: 1px solid gray;
+        border-right: 0 !important;
+    }
+}
+
+/************car section************/
+.car_section {
+    margin-top: -2%;
+}
+
+.rectangle {
+    width: 100%;
+    height: 5vw;
+    background-color: rgba(251, 222, 21, 1);
+    position: relative;
+
+}
+
+.trapezoid {
+    border-bottom: 28rem solid rgba(251, 222, 21, 1);
+    border-left: 307rem solid transparent;
+    border-right: 0 solid transparent;
+    height: 0;
+    width: 0;
+    position: relative;
+    left: -50vw;
+}
+
+.shape_position {
+    position: relative;
+    overflow: hidden;
+    /* Hide overflow to prevent content from spilling out */
+}
+
+.img_position {
+    position: absolute;
+    left: 50%;
+    top: -6rem;
+    transform: translateX(-50%);
+    max-width: 81.25rem;
+
+}
+
+@media (max-width: 767px) {
+    .trapezoid {
+        border-bottom: 40vw solid rgba(251, 222, 21, 1);
+        border-left: 250vw solid transparent;
+        left: -62.5vw;
+    }
+
+    .img_position {
+        top: 1vw;
+        width: 90vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .trapezoid {
+        border-bottom: 35vw solid rgba(251, 222, 21, 1);
+        border-left: 220vw solid transparent;
+        left: -55vw;
+    }
+
+    .img_position {
+        top: 0;
+        width: 80vw;
+    }
+}
+
+/******************services**************/
+#services {
+    padding: 8.125rem 0;
+}
+
+#services .carousel-caption h5 {
+    font-size: 1.875rem;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container .img-1 {
+    width: 100%;
+    height: auto;
+    max-width: 40rem;
+    max-height: 30rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background: linear-gradient(to bottom right, rgba(34, 34, 34, 0.7), rgba(0, 0, 0, 0));
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 2rem;
+    left: 3rem !important;
+    color: #fff !important;
+    font-family: PlusJakartaSans_Medium;
+    z-index: 1;
+    text-transform: uppercase;
+    text-align: left !important;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    margin: 0;
+}
+
+.carousel {
+    position: relative;
+    /* Ensure positioning context for buttons */
+}
+
+.slides .carousel-control-next,
+.slides .carousel-control-prev {
+    bottom: auto;
+    width: auto;
+
+}
+
+.slides .carousel-control-prev {
+    left: auto;
+    right: 2rem;
+}
+
+#services .carousel-control-next,
+#services .carousel-control-prev {
+    top: -4rem;
+}
+
+
+.carousel-control-next-icon {
+    background-size: contain;
+    background-image: url(../images/Button\ \(1\).png) !important;
+    width: 3.75rem !important;
+    height: 2.5rem !important;
+}
+
+.carousel-control-prev-icon {
+    background-size: contain;
+    background-image: url(../images/Button.png) !important;
+    width: 3.75rem !important;
+    height: 2.5rem !important;
+}
+
+.carousel-dark .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon {
+    filter: invert(0) !important;
+}
+
+/**************why_choose************/
+.heading {
+    font-family: 'PlusJakartaSans_Bold';
+    font-size: 3.125rem;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+#why_choose h6 {
+    font-family: PlusJakartaSans_Medium;
+    font-size: 1.25rem;
+    color: #000;
+    line-height: 20px;
+}
+
+#why_choose span {
+    font-family: 'PlusJakartaSans_Regular';
+    font-size: 1rem;
+    color: #97A0A4;
+    line-height: 2;
+}
+
+#why_choose p,
+#taxi_india p {
+    font-family: PlusJakartaSans_Light;
+    font-size: 0.9375rem;
+    line-height: 2;
+}
+
+#why_choose button,
+#taxi_india button {
+    background-color: rgba(251, 222, 21, 1);
+}
+
+.p_bold {
+    font-family: PlusJakartaSans_Regular !important;
+}
+
+#why_choose button:hover,
+#taxi_india button:hover {
+    background-color: #3192ea;
+    box-shadow: 0 14px 20px #3191ea21;
+    color: #fff;
+}
+
+.img_bg {
+    background-image: url(../images/Decore\ \(1\).png);
+    background-size: contain;
+    background-position: 16%;
+    background-repeat: no-repeat;
+}
+
+#img_bg_decore {
+    background-image: url(../images/Decore.png);
+    background-size: 9.125rem;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    max-width: 26rem;
+    position: relative;
+    z-index: 1;
+
+}
+
+#img_bg_decore img {
+    max-width: 20.313rem;
+    position: absolute;
+    left: 2rem;
+    bottom: 1rem;
+    z-index: -1;
+}
+
+#taxi_india {
+    padding: 5rem 0;
+}
+
+#Destinations {
+    padding: 5rem 0;
+}
+
+#Destinations .carousel-control-next,
+#Destinations .carousel-control-prev,
+#Destinations .slick-arrow {
+    top: -4rem;
+}
+
+.card-body {
+    background-color: #fff;
+    border-radius: 24px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
+}
+
+.card {
+    border: 0 !important;
+    box-shadow: 0px 10.84px 8.67px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 24px !important;
+
+}
+
+.card_title {
+    font-size: 1.875rem;
+    font-family: 'PlusJakartaSans_Medium';
+}
+
+.card_img {
+    width: 100%;
+    height: 28.75rem;
+    /* Set a maximum height for desktop view */
+    object-fit: cover;
+    /* Ensures the image covers the entire area without stretching */
+    border-radius: 1.5rem 1.5rem 0 0;
+    object-position: top;
+}
+
+.card {
+    border: 0 !important;
+    background-color: #fff;
+    border-radius: 24px;
+}
+
+/*********************footer **************/
+footer {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 5rem 0 1rem;
+}
+
+.footer_head {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: PlusJakartaSans_Bold !important;
+    font-size: 2rem;
+}
+
+footer h2 {
+    text-decoration: none;
+    color: #fff !important;
+    font-family: 'PlusJakartaSans_Medium';
+    font-size: 1.125rem;
+    line-height: 1.3;
+}
+
+footer h2+p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.email a,
+footer li a,
+footer li {
+    text-decoration: none;
+    color: rgba(253, 253, 253, 0.9) !important;
+    font-family: PlusJakartaSans_Light !important;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.email a {
+    font-size: 1.125rem;
+}
+
+hr {
+    margin: 1rem 0 !important;
+    color: inherit;
+    background-color: gray !important;
+    border: 0;
+    opacity: .25;
+}
+
+footer p {
+    text-decoration: none;
+    color: #fff !important;
+    font-family: PlusJakartaSans_Light !important;
+    font-size: 0.875rem;
+    line-height: 1.3;
+}
+
+/* Responsive font sizes */
+@media (max-width: 767px) {
+
+    h1,
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-toggler {
+        font-size: 0.875rem !important;
+    }
+
+    .contact_btn {
+        background-color: rgba(49, 146, 234, 1);
+        width: 5.6rem;
+        font-size: 0.875rem;
+        height: 2rem;
+    }
+
+    .user_img {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+@media (min-width: 769px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+}
+
+
+
+/* rem adjustment */
+#pills-tabContent form button {
+    background: none;
+}
+
+.navbar-text svg,
+#pills-tabContent form button svg {
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+footer .img-fluid {
+    max-width: 13.75rem;
+}
+
+.bottom_footer img {
+    max-width: 1.5rem;
+}
+
+#taxi_india .img2 {
+    max-width: 14rem;
+}
+
+#taxi_india .img1 {
+    max-width: 17.813rem
+}
+
+
+#pills-tabContent form button span {
+    display: none;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 0;
+    width: auto;
+    cursor: pointer;
+}
+
+.slick-prev {
+    right: 5rem;
+}
+
+.slick-next {
+    right: 0;
+}
+
+#services .slick-arrow {
+    top: -4rem;
+}
+
+
+@media only screen and (min-width:993px) and (max-width:1024px) {
+    .card_img {
+        height: 16.75rem;
+    }
+
+    .card_title {
+        font-size: 1.25rem;
+    }
+
+    .heading {
+        font-size: 2.25rem;
+    }
+
+    #Destinations .carousel-control-next,
+    #Destinations .carousel-control-prev {
+        top: -5.5rem;
+    }
+
+    #taxi_india img {
+        max-width: 100% !important;
+        left: 0;
+    }
+
+    #services {
+        padding: 4.125rem 0;
+    }
+
+    #Destinations {
+        padding: 3rem 0;
+    }
+
+    #services .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    #hero {
+        padding: 6.25rem 0 2rem;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    footer {
+        padding: 4rem 0 0rem;
+    }
+
+    footer .text-sm-start {
+        margin-bottom: 30px;
+    }
+
+    #taxi_india {
+        padding: 3rem 0;
+    }
+
+    #taxi_india [class*="col-lg"]:last-child {
+        margin-top: 70px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    #services {
+        padding: 4rem 0;
+    }
+
+    .carousel-caption {
+        top: 1rem;
+        left: 2rem !important;
+    }
+
+    .card_title {
+        font-size: 1.25rem;
+    }
+
+    #services .carousel-caption h5 {
+        font-size: 1.35rem;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    #hero {
+        padding: 5rem 0 1rem;
+    }
+
+    .card_img {
+        height: 16rem;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .navbar-collapse {
+        background: #fff;
+        padding: 15px 25px;
+        margin-top: 10px;
+    }
+
+    #navbarText .nav-link {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    footer ul {
+        padding-left: 0;
+    }
+
+    #pills-tab {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    footer .text-sm-start {
+        margin-bottom: 30px;
+    }
+
+    .bottom_footer .text-md-start {
+        margin-bottom: 20px;
+    }
+
+    .card_title {
+        font-size: 1.25rem;
+    }
+
+    .heading {
+        font-size: 1.85rem;
+    }
+
+    #Destinations {
+        padding: 3rem 0;
+    }
+
+    .card_img {
+        max-height: 250px;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon,
+    .slick-arrow {
+        width: 4rem !important;
+    }
+     .carousel-control-next, #Destinations .carousel-control-prev, #Destinations .slick-arrow {
+        top: -1rem;
+    }
+    .slick-prev {
+        right: 3.5rem;
+    }
+
+    #services .slick-arrow {
+        top: -2rem;
+    }
+
+    #services .p-3 {
+        padding: 0.5rem !important;
+    }
+
+    .slides .carousel-control-prev {
+        right: 0.5rem;
+    }
+
+    .btn {
+        height: 2.75rem;
+        width: 8rem;
+        font-size: 1rem;
+    }
+
+    #taxi_india {
+        padding: 30px 15px;
+    }
+
+    #why_choose .btn {
+        margin-bottom: 60px;
+    }
+
+    #services {
+        padding: 4rem 0;
+    }
+
+    .carousel-caption {
+        top: 0rem;
+        left: 1rem !important;
+    }
+
+    #services .carousel-caption h5 {
+        font-size: 1.15rem;
+    }
+
+    .slick-slide a img {
+        max-width: 25px;
+    }
+
+    .overlay {
+        border-radius: 12px;
+    }
+
+    #services .carousel-control-next,
+    #services .carousel-control-prev {
+        top: -2rem;
+    }
+
+    #pills-tabContent form .col-30 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+        border: none ! IMPORTANT;
+        margin-left: 0 !important;
+        border-bottom: 1px solid #E9E9E9 !important;
+        padding-bottom: 10px;
+    }
+
+    #pills-tabContent input,
+    #pills-tabContent input::placeholder {
+        font-size: .875rem;
+    }
+
+    #pills-tabContent form .col-auto {
+        width: auto;
+    }
+
+    #pills-tabContent form button svg {
+        display: none;
+    }
+
+    #pills-tabContent form button span {
+        display: block;
+    }
+
+    #pills-tabContent form button {
+        text-align: center;
+        background: #0d6efd;
+        width: 100%;
+        color: #fff;
+        padding: 10px !important;
+        border-radius: 10px;
+        font-family: 'PlusJakartaSans_Medium';
+    }
+
+    #hero {
+        padding: 4rem 0 1rem;
+    }
+
+    .container {
+        max-width: 98%;
+    }
+}
